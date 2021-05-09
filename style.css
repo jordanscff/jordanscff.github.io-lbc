@@ -63,18 +63,33 @@ header {
 
 /** Homepage Content TOP **/
 
-.page_landing {
-  position: relative;
-  color: white;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-image: url('space.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  letter-spacing: 30px;
-  font-size: 40px;
-  background-color: #533f2b;
+@media (min-width: 1000px) {
+  .page_landing {
+    background-image: url('space.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 40px;
+    position: relative;
+    color: white;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    letter-spacing: 30px;
+    background-color: #ab9c9e;
+  }
+}
+
+@media (max-width: 1000px) {
+  .page_landing {
+    font-size: 5px;
+    position: relative;
+    color: white;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    letter-spacing: 30px;
+    background-color: #ab9c9e;
+  }
 }
 
 .page_landing_content h1 {
@@ -84,11 +99,22 @@ header {
   align-items: center;
 }
 
+@media (max-width: 1000px) {
+#risen {
+  color: #ffd1dc;
+  opacity: 0.8;
+  z-index: -1;
+  font-size: 60px;
+}
+}
+
+@media (min-width: 1000px){
 #risen {
   color: #ffd1dc;
   opacity: 0.8;
   z-index: -1;
   font-size: 300px;
+}
 }
 
 /** Homepage Content TOP END **/
@@ -120,6 +146,11 @@ header {
   text-transform: uppercase;
   letter-spacing: 10px;
 }
+
+@media (max-width: 1000px) {
+.homepage-content-middle .content {
+  font-size: 10px;
+}}
 
 .homepage-content-middle .content {
   display: flex;
@@ -166,6 +197,19 @@ header {
   letter-spacing: 10px;
 }
 
+@media (max-width: 1000px) {
+#iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  height: 302px;
+}}
+
+@media (min-width: 1000px) {
 #iframe {
   display: flex;
   justify-content: center;
@@ -175,7 +219,9 @@ header {
   padding-right: 25px;
   padding-bottom: 25px;
   height: 602px;
-}
+}}
+
+
 
 /** WHATS ON END **/
 
