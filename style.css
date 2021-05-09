@@ -1,83 +1,197 @@
 * {
-  margin: 0 auto;
+  margin: 0 0;
+  width: 100%;
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.homepage-background {
-  width: 50%;
-  height: 100%;
+html {
+  scroll-behavior: smooth;
 }
 
-.homepage-main {
-  position: relative;
-}
+/** NAV BAR **/
 
-
-#content {
+header {
+  display: flex;
+  height: 100px;
   position: absolute;
-  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.left {
+  width: 25%;
+}
+
+.left h1 {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  margin-right: 10px;
+}
+
+.right-left {
+  width: 25%;
+}
+
+.right-right {
+  display: flex;
+}
+
+.right-right a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  color: white;
+  letter-spacing: -0.8px;
+}
+
+.right-right a:hover{
+  color:white;
+  transform: scale(1.1);
+}
+
+
+/** NAV BAR END **/
+
+/** Homepage Content TOP **/
+
+.page_landing {
+  position: relative;
+  color: white;
+  z-index: -1;
   height: 100%;
+  width: 100%;
+  background-image: url('space.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  letter-spacing: 30px;
+  font-size: 40px;
+  background-color: #533f2b;
+}
+
+.page_landing_content h1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#risen {
+  color: #ffd1dc;
+  opacity: 0.8;
+  z-index: -1;
+  font-size: 300px;
+}
+
+/** Homepage Content TOP END **/
+
+/** Homepage Content MIDDLE **/
+
+.homepage-content-middle {
+  display: flex;
+  background-color: #eae6e7;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-content-middle-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
 }
 
-#content_h1 {
-  left: 0%;
-  right: 0%;
-  top: 20%;
-  position: absolute;
-  height: auto;
+.homepage-content-middle h2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 10%;
+  padding-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: 1.5;
-  font-family: 'Cantarell', sans-serif;
-  font-size: 50px;
-  color: #6B705C;
+  letter-spacing: 10px;
 }
 
-.homepage-main img {
-  width: 750px;
-  height: 750px;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 33%;
+.homepage-content-middle .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  border-left: 6px solid #120f0f;
+  border-right: 6px solid #120f0f;
+  width: 75%;
+  padding-left: 20px;
+  padding-right: 20px;
   height: auto;
 }
 
-#content_h2 {
-  left: 0%;
-  right: 0%;
-  top: 70%;
-  position: absolute;
-  height: auto;
+/** Homepage Content MIDDLE END **/
+
+/** WHATS ON **/
+
+
+.homepage-content-whatson {
+  display: flex;
+  background-color: #eae6e7;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-content-whatson-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-content-whatson h2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 10%;
+  padding-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: 0.5;
-  font-family: 'Cantarell', sans-serif;
-  font-size: 25px;
-  color: #36382E;
-  border-style: solid;
-  border-radius: 10px;
-  width: 100px;
+  letter-spacing: 10px;
 }
 
-#content_h2:hover{
-  color: black;
+#iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 940px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  height: 602px;
 }
 
-.homepage-main img:hover {
-  transform: scale(1.01);
+/** WHATS ON END **/
+
+/** Footer END **/
+
+footer {
+  height: 100px;
+  background-color: #ab9c9e;
+  display: flex;
 }
 
-#left_brown {
-  display: inline-block;
-  background-color: #D5C3A9;
-  height: 100%;
-  float:left;
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #120f0f;
 }
 
-#right_white {
-  display: inline-block;
-  background-color: #FFFFFF;
-  height: 100%;
-  float:right;
-  left: 50%;
-}
+/** Footer **/
