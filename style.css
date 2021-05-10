@@ -9,6 +9,25 @@ html {
   scroll-behavior: smooth;
 }
 
+.spacer {
+  width: 100%;
+  height: 80px;
+ background: linear-gradient(to bottom right, #eae6e7 50%, #ab9c9e 0px);
+}
+
+.spacer-end {
+  width: 100%;
+  height: 80px;
+ background: linear-gradient(to top left, #eae6e7 50%, #ab9c9e 0px);
+}
+
+.spacer-bottom {
+  width: 100%;
+  height: 80px;
+ background: linear-gradient(to bottom left, #eae6e7 50%, #ab9c9e 0px);
+}
+
+
 /** NAV BAR **/
 
 header {
@@ -72,7 +91,7 @@ header {
     position: relative;
     color: white;
     z-index: -1;
-    height: 100%;
+    height: 80%;
     width: 100%;
     letter-spacing: 30px;
     background-color: #ab9c9e;
@@ -85,7 +104,7 @@ header {
     position: relative;
     color: white;
     z-index: -1;
-    height: 100%;
+    height: 80%;
     width: 100%;
     letter-spacing: 30px;
     background-color: #ab9c9e;
@@ -147,19 +166,25 @@ header {
   letter-spacing: 10px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 .homepage-content-middle .content {
-  font-size: 10px;
+  font-size: 11px;
+  width: 80%;
 }}
+
+@media (min-width: 1200px) {
+  .homepage-content-middle .content {
+    width: 50%;
+    font-size: 15px;
+  }
+}
 
 .homepage-content-middle .content {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow:hidden;
-  border-left: 6px solid #120f0f;
-  border-right: 6px solid #120f0f;
-  width: 75%;
+  border-left: 2px solid #120f0f;
   padding-left: 20px;
   padding-right: 20px;
   height: auto;
@@ -172,7 +197,7 @@ header {
 
 .homepage-content-whatson {
   display: flex;
-  background-color: #eae6e7;
+  background-color: #ab9c9e;
   height: 600px;
   justify-content: center;
   align-items: center;
@@ -191,6 +216,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  color: white;
   height: 10%;
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -224,6 +250,114 @@ header {
 
 
 /** WHATS ON END **/
+
+
+/** Homepage Content TEAMS **/
+
+.homepage-content-teams {
+  display: flex;
+  background-color: #eae6e7;
+  height: 650px;
+}
+
+.homepage-content-teams-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.homepage-content-teams h2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 10%;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+@media (max-width: 1200px) {
+.homepage-content-teams .content {
+  font-size: 11px;
+  width: 80%;
+}}
+
+@media (min-width: 1200px) {
+  .homepage-content-teams .content {
+    width: 50%;
+    font-size: 15px;
+  }
+}
+
+.homepage-content-teams .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  border-left: 2px solid #120f0f;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50%;
+  height: auto;
+}
+
+.teams_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: #ab9c9e;
+  border-radius: 5px;
+  margin: 0px 10px;
+  color: white;
+}
+
+.teams_card_full {
+  display: flex;
+  width: 75%;
+  height: 400px;
+  margin-top: 0px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.teams_card_text {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+
+.teams_card_text h3 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 20%;
+}
+
+.teams_card_text p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+@media (max-width: 1000px){
+.teams_card_text p {
+  font-size: 6px;
+}}
+
+@media (max-width: 1000px){
+.teams_card_text h3 {
+  font-size: 12px;
+}}
+
+
+
+/** Homepage Content TEAMS END **/
 
 /** Footer END **/
 
