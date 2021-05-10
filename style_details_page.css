@@ -76,12 +76,7 @@ header {
 .homepage-content-clubs {
   height: 800px;
   display: flex;
-  background: linear-gradient(
-       90deg,
-       RGB(254, 163, 170),
-       RGB(248, 184, 139),
-       RGB(250, 248, 132)
-   );
+  background-color: #eae6e7;
 }
 
 
@@ -240,12 +235,7 @@ header {
 
 footer {
   height: 100px;
-  background: linear-gradient(
-       90deg,
-       RGB(254, 163, 170),
-       RGB(248, 184, 139),
-       RGB(250, 248, 132)
-   );
+background-color: #eae6e7;
   display: flex;
 
 }
