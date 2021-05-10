@@ -27,6 +27,12 @@ html {
  background: linear-gradient(to bottom left, #eae6e7 50%, #ab9c9e 0px);
 }
 
+.spacer-bottom-end {
+  width: 100%;
+  height: 80px;
+ background: linear-gradient(to top right, #eae6e7 50%, #ab9c9e 0px);
+}
+
 
 /** NAV BAR **/
 
@@ -41,13 +47,14 @@ header {
   width: 25%;
 }
 
-.left h1 {
+.left a {
   color: white;
   font-size: 25px;
   font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .right {
@@ -192,12 +199,123 @@ header {
 
 /** Homepage Content MIDDLE END **/
 
+/** Homepage Content TEAMS **/
+
+.homepage-content-teams {
+  display: flex;
+  background-color: #ab9c9e;
+  height: 650px;
+}
+
+.homepage-content-teams-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.homepage-content-teams h2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 10%;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #eae6e7;
+}
+
+@media (max-width: 1200px) {
+.homepage-content-teams .content {
+  font-size: 11px;
+  width: 80%;
+}}
+
+@media (min-width: 1200px) {
+  .homepage-content-teams .content {
+    width: 50%;
+    font-size: 15px;
+  }
+}
+
+.homepage-content-teams .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  border-left: 2px solid #eae6e7;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50%;
+  height: auto;
+  color: #eae6e7;
+}
+
+.teams_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: #eae6e7;
+  border-radius: 5px;
+  margin: 0px 10px;
+  color: #120f0f;
+}
+
+.teams_card_full {
+  display: flex;
+  width: 75%;
+  height: 400px;
+  margin-top: 0px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.teams_card_text {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+}
+
+.teams_card_text h3 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 20%;
+}
+
+.teams_card_text p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #120f0f;
+}
+
+@media (max-width: 1000px){
+.teams_card_text p {
+  font-size: 6px;
+}}
+
+@media (max-width: 1000px){
+.teams_card_text h3 {
+  font-size: 12px;
+}}
+
+
+
+/** Homepage Content TEAMS END **/
+
+
 /** WHATS ON **/
 
 
 .homepage-content-whatson {
   display: flex;
-  background-color: #ab9c9e;
+  background-color: #eae6e7;
   height: 600px;
   justify-content: center;
   align-items: center;
@@ -216,7 +334,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color: white;
+  color: #120f0f;
   height: 10%;
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -252,114 +370,218 @@ header {
 /** WHATS ON END **/
 
 
-/** Homepage Content TEAMS **/
+/** CLUBS **/
 
-.homepage-content-teams {
+
+.homepage-content-clubs {
   display: flex;
-  background-color: #eae6e7;
-  height: 650px;
+  background-color: #ab9c9e;
+  height: 500px;
 }
 
-.homepage-content-teams-main {
+.homepage-content-clubs-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items:flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-content-clubs h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eae6e7;
+  height: 10%;
+  padding-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.clubs-cards-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#clubs-cards-1 {
+  background: linear-gradient(to top left, #eae6e7 50%, #ffd1dc 0px);
+}
+
+#clubs-cards-2 {
+  background-color: #ffd1dc;
+}
+
+#clubs-cards-3 {
+  background: linear-gradient(to top right, #eae6e7 50%, #ffd1dc 0px);
+}
+
+@media (min-width: 700px){
+.clubs-cards h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  flex-wrap: wrap;
+  color: #120f0f;
+}}
+
+@media (max-width: 700px){
+.clubs-cards h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  flex-wrap: wrap;
+  color: #120f0f;
+}}
+
+@media (max-width: 700px) {
+  .clubs-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  .clubs-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .clubs-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+}
+
+
+.clubs-cards a{
+  text-decoration: none;
+  color: #120f0f;
+}
+
+/** CLUBS ON END **/
+
+/** WATCH LIVE ON **/
+
+
+.homepage-content-watchlive {
+  display: flex;
+  background-color: #eae6e7;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-content-watchlive-main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
+  height: 100%;
 }
 
-.homepage-content-teams h2 {
+.homepage-content-watchlive h2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  color: #120f0f;
   height: 10%;
   padding-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 10px;
 }
 
-@media (max-width: 1200px) {
-.homepage-content-teams .content {
-  font-size: 11px;
-  width: 80%;
+@media (max-width: 1000px) {
+#iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  height: 302px;
 }}
 
-@media (min-width: 1200px) {
-  .homepage-content-teams .content {
-    width: 50%;
-    font-size: 15px;
-  }
-}
-
-.homepage-content-teams .content {
+@media (min-width: 1000px) {
+#iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow:hidden;
-  border-left: 2px solid #120f0f;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 50%;
-  height: auto;
-}
+  width: 940px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  height: 602px;
+}}
 
-.teams_card {
+
+
+/** WATCH LIVE ON END **/
+
+
+/** CONTACT **/
+
+.homepage-content-contact {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
   background-color: #ab9c9e;
-  border-radius: 5px;
-  margin: 0px 10px;
-  color: white;
-}
-
-.teams_card_full {
-  display: flex;
-  width: 75%;
-  height: 400px;
-  margin-top: 0px;
-  flex-wrap: nowrap;
+  height: 600px;
   justify-content: center;
   align-items: center;
 }
 
-.teams_card_text {
+.homepage-content-contact-main {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  margin: 0px 10px;
+  width: 100%;
+  height: 100%;
 }
 
-.teams_card_text h3 {
+.homepage-content-contact h2 {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  height: 20%;
+  align-items: flex-start;
+  color: #eae6e7;
+  height: 10%;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
 }
 
-.teams_card_text p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-}
-
-@media (max-width: 1000px){
-.teams_card_text p {
-  font-size: 6px;
-}}
-
-@media (max-width: 1000px){
-.teams_card_text h3 {
-  font-size: 12px;
-}}
+/** CONTACT END **/
 
 
 
-/** Homepage Content TEAMS END **/
-
-/** Footer END **/
+/** Footer **/
 
 footer {
   height: 100px;
@@ -374,4 +596,5 @@ footer p {
   color: #120f0f;
 }
 
-/** Footer **/
+
+/** Footer END **/
