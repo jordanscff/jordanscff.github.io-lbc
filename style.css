@@ -204,7 +204,12 @@ header {
 .homepage-content-teams {
   display: flex;
   background-color: #ab9c9e;
-  height: 650px;
+  height: 550px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .homepage-content-teams-main {
@@ -212,25 +217,33 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 75%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 
 .homepage-content-teams h2 {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  height: 10%;
+  align-items: flex-end;
+  height: 100px;
   padding-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 10px;
   color: #eae6e7;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 700px) {
 .homepage-content-teams .content {
-  font-size: 11px;
+  font-size: 8px;
   width: 80%;
 }}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+.homepage-content-teams .content {
+  font-size: 10px;
+  width: 80%;
+}}
+
 
 @media (min-width: 1200px) {
   .homepage-content-teams .content {
@@ -247,66 +260,96 @@ header {
   border-left: 2px solid #eae6e7;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 20px;
   width: 50%;
-  height: auto;
+  height: 75px;
   color: #eae6e7;
 }
 
-.teams_card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
+.pastor_card {
+  width: 100%;
+  height: 200px;
   background-color: #eae6e7;
-  border-radius: 5px;
-  margin: 0px 10px;
-  color: #120f0f;
-}
-
-.teams_card_full {
-  display: flex;
   width: 75%;
-  height: 400px;
-  margin-top: 0px;
-  flex-wrap: nowrap;
+  border-radius: 10px;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
-.teams_card_text {
+.pastor_card_left {
   display: flex;
-  flex-direction: column;
-  margin: 0px 10px;
-}
-
-.teams_card_text h3 {
-  display: flex;
-  align-items: flex-end;
   justify-content: center;
-  height: 20%;
-}
-
-.teams_card_text p {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  color: #120f0f;
+  width: 50%;
 }
 
-@media (max-width: 1000px){
-.teams_card_text p {
-  font-size: 6px;
+@media (max-width: 800px) {
+.pastor_card_left{
+  width: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }}
 
-@media (max-width: 1000px){
-.teams_card_text h3 {
+.pastor_card_left_image {
+  display: flex;
+  background-color: #ab9c9e;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+.pastor_card_left_image{
+  display: none;
+}}
+
+@media (min-width: 800px) and (max-width: 1150px) {
+.pastor_card_left_image{
+  height: 100px;
+  width: 100px;
+}}
+
+@media (min-width: 1150px) {
+.pastor_card_left_image{
+  height: 150px;
+  width: 150px;
+}}
+
+.pastor_card_right {
+  display: flex;
+  margin-right: 20px;
+}
+
+@media (max-width: 800px) {
+.pastor_card_right{
+  margin-right: 10px;
+  margin-left: 10px;
+}}
+
+.pastor_card_right p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+.pastor_card_right p{
+  font-size: 8px;
+}}
+
+@media (min-width: 800px) and (max-width: 1150px) {
+.pastor_card_right p{
   font-size: 12px;
 }}
 
-
-
+@media (min-width: 1150px) {
+.pastor_card_right p{
+  font-size: 15px;
+}}
 /** Homepage Content TEAMS END **/
 
 

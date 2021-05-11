@@ -16,7 +16,6 @@ header {
   display: flex;
   height: 100px;
   position: absolute;
-  border-radius: 0 0 10px 10px;
 }
 
 .nav{
@@ -36,7 +35,7 @@ header {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-
+  
 }
 
 .right {
@@ -235,7 +234,7 @@ header {
 
 footer {
   height: 100px;
-background-color: #eae6e7;
+  background-color: #eae6e7;
   display: flex;
 
 }
