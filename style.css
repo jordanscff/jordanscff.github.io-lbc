@@ -70,6 +70,8 @@ header {
   display: flex;
 }
 
+
+
 .right-right a {
   display: flex;
   align-items: center;
@@ -427,6 +429,10 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.clubs-cards:hover{
+  transform: scale(1.02);
 }
 
 #clubs-cards-1 {
