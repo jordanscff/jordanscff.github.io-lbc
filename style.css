@@ -259,9 +259,6 @@ header {
   display: flex;
 }
 
-.pastor_card:hover{
-  transform: scale(1.02);
-}
 
 .pastor_card_left {
   display: flex;
@@ -625,7 +622,7 @@ header {
   border-radius: 5px;
 }
 
-.contact-cards:hover{
+#address:hover{
   transform: scale(1.02);
 }
 

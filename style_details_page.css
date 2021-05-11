@@ -16,6 +16,7 @@ header {
   display: flex;
   height: 100px;
   position: absolute;
+  background-color: #eae6e7;
 }
 
 .nav{
@@ -76,6 +77,8 @@ header {
   height: 100%;
   display: flex;
   background-color: #eae6e7;
+  position: relative;
+  top: 100px;
 }
 
 
@@ -234,6 +237,8 @@ footer {
   height: 100px;
   background-color: #eae6e7;
   display: flex;
+  position: relative;
+  top: 100px;
 
 }
 
